@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <div>
-      Olá, Mundo!
+      <h1> Olá, Mundo! </h1>
     </div>
   );
 }

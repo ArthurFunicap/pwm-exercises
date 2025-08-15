@@ -19,6 +19,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport"
+              content="width-device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta description="Site de exemplo da disciplina de Programação Web e Mobile da UNICAP" />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>
