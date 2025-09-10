@@ -1,0 +1,38 @@
+.divContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(37, 139, 207, 0.877);
+}
+
+.portifolioContainer {
+  display: flex;
+  background-color: #ffffff;
+  width: 210mm;
+  height: 297mm;
+  padding: 20mm;
+  margin-top: 30mm;
+  margin-bottom: 30mm;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  gap: 20px;
+}
+
+.divImage {
+    display: flex;
+}
+
+.portifolioImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.portifolioTitle {
+    display: flex;
+    align-items: flex-start;
+}
+
+.portifolioTitleID {
+    color: rgba(36, 117, 172, 0.993);
+}
