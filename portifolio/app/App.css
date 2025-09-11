@@ -7,7 +7,6 @@
 }
 
 .portifolioContainer {
-  display: flex;
   background-color: #ffffff;
   width: 210mm;
   height: 297mm;
@@ -18,8 +17,13 @@
   gap: 20px;
 }
 
-.divImage {
+.portifolioTop {
     display: flex;
+    gap: 20px;
+}
+
+.divImage {
+    flex-shrink: 0;
 }
 
 .portifolioImage {
@@ -28,11 +32,29 @@
     border-radius: 50%;
 }
 
-.portifolioTitle {
+.divDesc {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
 }
 
 .portifolioTitleID {
     color: rgba(36, 117, 172, 0.993);
+}
+
+.portifolioMid {
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descriptionText {
+    margin-top: 30px;
+    align-content: center;
+    justify-content: center;
+    width: 95%;
 }
