@@ -65,7 +65,7 @@ export default function Home() {
 
         <div className="portifolioBottom">
           <div className="jogoDaForca">
-            
+            <button className="botaoForca"> <b>Forca!</b> </button>
           </div>
         </div>
       </div>

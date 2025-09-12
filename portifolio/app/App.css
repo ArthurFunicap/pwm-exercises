@@ -81,3 +81,19 @@
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+.jogoDaForca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.botaoForca{
+    background-color: rgba(80, 148, 211, 0.703);
+    color: #ffffff;
+    width: 200px;
+    height: 70px;
+    border-radius: 10%;
+    font-size: 25px;
+}
