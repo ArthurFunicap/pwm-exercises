@@ -58,3 +58,26 @@
     justify-content: center;
     width: 95%;
 }
+
+.certificatesTitle {
+    margin-top: 30px;
+}
+
+.certificatesList {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.skillsTitle {
+    margin-top: 30px;
+}
+
+.skillsList {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.linhaDivisora {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
