@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     background-color: rgba(37, 139, 207, 0.877);
 }
 
@@ -90,10 +89,22 @@
 }
 
 .botaoForca{
-    background-color: rgba(80, 148, 211, 0.703);
+    display: flex;
+    background-color: rgb(101, 170, 235);
     color: #ffffff;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     height: 70px;
-    border-radius: 10%;
+    border-radius: 20px;
     font-size: 25px;
+}
+
+.botaoForca:active {
+    background-color: rgb(42, 110, 173);
+}
+
+.buttonText {
+    justify-content: center;
+    align-items: center;
 }

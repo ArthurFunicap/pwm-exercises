@@ -1,0 +1,18 @@
+.divContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(37, 139, 207, 0.877);
+}
+
+.divForca {
+  background-color: #ffffff;
+  width: 210mm;
+  height: 100mm;
+  padding: 20mm;
+  margin-top: 30mm;
+  margin-bottom: 30mm;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  gap: 20px;
+}

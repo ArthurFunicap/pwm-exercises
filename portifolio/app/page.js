@@ -1,5 +1,6 @@
 import Image from "next/image";
 import "./App.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -65,7 +66,12 @@ export default function Home() {
 
         <div className="portifolioBottom">
           <div className="jogoDaForca">
-            <button className="botaoForca"> <b>Forca!</b> </button>
+            <Link
+              href="/Forca"
+              className="botaoForca"
+            >
+              <p className="buttonText"> <b>Forca!</b> </p>
+            </Link>
           </div>
         </div>
       </div>
