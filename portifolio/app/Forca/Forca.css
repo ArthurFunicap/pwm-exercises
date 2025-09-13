@@ -7,6 +7,7 @@
 }
 
 .divForca {
+  display: flex;
   background-color: #ffffff;
   width: 210mm;
   height: 100mm;
@@ -15,4 +16,9 @@
   margin-bottom: 30mm;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   gap: 20px;
+}
+
+.interface1 {
+  display: flex;
+  flex-direction: column;
 }
