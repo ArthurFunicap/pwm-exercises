@@ -12,7 +12,7 @@ export default function Forca() {
 
   useEffect(() => {
     async function carregarPalavra(){
-      const resposta = await fetch("/verbos.txt");
+      const resposta = await fetch("/palavras.txt");
       const texto = await resposta.text();
 
       const linhas = texto
@@ -37,7 +37,7 @@ export default function Forca() {
     .map((letra) => (acertos.includes(letra) ? letra : "_"))
     .join(" ");
 
-  const alfabeto = "abcdefghijklmnopqrstuvwxyz".split("");
+  const alfabeto = "abcdefghijklmnopqrstuvwxyzç".split("");
 
   function chutar(letra){
     if (fim) return;
@@ -65,14 +65,14 @@ export default function Forca() {
             {exibicao}
           </div>
 
-          <div className="input">
+          <div className="entrada">
             {alfabeto.map((letra) => (
               <button
                 key={letra}
                 onClick={() => chutar(letra)}
                 disabled={acertos.includes(letra) || erros.includes(letra) || fim}
               >
-                {letra}
+                <b>{letra}</b>
               </button>
             ))}
           </div>
@@ -83,6 +83,26 @@ export default function Forca() {
             <p>Erros: {erros.join(", ")}</p>
             <p>Tentativas restantes: {6 - erros.length}</p>
           </div>
+
+          {fim && (
+            <div className="telaFinal">
+              <div className={`mensagemFinal ${fim}`}>
+                {fim === "ganhou" && (
+                  <>
+                    <h2>🎉 Você ganhou!</h2>
+                    <button onClick={() => window.location.reload()}><b>Reiniciar</b></button>
+                  </>
+                )}
+                {fim === "perdeu" && (
+                  <>
+                    <h2>💀 Você perdeu!</h2>
+                    <p>A palavra era: {palavra}</p>
+                    <button onClick={() => window.location.reload()}><b>Reiniciar</b></button>
+                  </>
+                )}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>
