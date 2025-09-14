@@ -37,7 +37,7 @@ export default function Forca() {
     .map((letra) => (acertos.includes(letra) ? letra : "_"))
     .join(" ");
 
-  const alfabeto = "abcdefghijklmnopqrstuvwxyzç".split("");
+  const alfabeto = "abcdefghijklmnopqrstuvwxyz".split("");
 
   function chutar(letra){
     if (fim) return;
